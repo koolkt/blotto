@@ -185,7 +185,7 @@
         <div class="inner-video">
           <div class="volume-controls">
             <svg id="vol-off"
-              style="height: 67px;position: absolute;top: 130px;fill: rgba(169, 169, 169, 0.53);stroke: rgba(169, 169, 169, 0.53);width: 67px;right: 20px;"
+              style="height: 67px;position: fixed;top: 3px;fill: rgba(169, 169, 169, 0.53);stroke: rgba(169, 169, 169, 0.53);width: 67px;right: 15px;"
               xmlns:dc="http://purl.org/dc/elements/1.1/"
               xmlns:cc="http://creativecommons.org/ns#"
               xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -228,7 +228,7 @@
 
             <svg
               id="vol-on"
-              style="display:none;height: 67px;position: absolute;top: 130px;fill: rgba(169, 169, 169, 0.53);stroke: rgba(169, 169, 169, 0.53);width: 67px;right: 20px;"
+              style="display:none;height: 67px;position: fixed;top: 3px;fill: rgba(169, 169, 169, 0.53);stroke: rgba(169, 169, 169, 0.53);width: 67px;right: 15px;"
               xmlns:dc="http://purl.org/dc/elements/1.1/"
               xmlns:cc="http://web.resource.org/cc/"
               xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -270,15 +270,16 @@
                       background: white;
                       bottom: 0;
                       right: 0;
-                      padding: 30px;">
-            <h4 style="margin-top: 0;">Contacto</h4>
+                      cursor: pointer;
+                      padding: 20px;" onclick="blottoScrollTo('contact');">
+            <h3 style="margin-top: 0;">Contacto</h3>
           </div>
           <div style="position: absolute;
                       background: white;
                       bottom: 0;
                       right: 170px;
                       cursor: pointer;
-                      padding: 50px;" onclick="scrollToAbout();">
+                      padding: 30px;" onclick="blottoScrollTo('about');">
             <h3 style="margin-top: 0;">¿Quiénes Somos?</h3>
           </div>
         </div>
@@ -291,52 +292,74 @@
         </video>
       </div>
     </section>
-      <section id="desc" style="background: white; padding:80px;">
-        <div class="container">
-          <h2>¿Quiénes Somos?</h2>
-          <p style="max-width: 600px;text-align:justify;">
-            Grupo Blotto busca ser una comunidad conformada por jóvenes interesados en las experiencias únicas. Creamos experiencias en donde siempre podrán encontrar combinaciones de música, arte, diseño y gastronomía las cuales los llevaran a sentir, envueltos en un ambiente único.
-            Para nosotros es de suma importancia el que cada detalle en nuestros eventos alcancen la perfección para así poder brindarle a la comunidad una experiencia digna por haber puesto su confianza en nosotros.
+      <section id="desc" style="background: white; padding:40px 80px;">
+        <div class="container" style="display: flex;">
+          <div style="flex:1">
+          <h3 id="sectionh">¿Quiénes Somos?</h3>
+          <p id="sectionp" style="max-width: 600px;text-align:justify;">
+            Grupo Blotto es una comunidad conformada por jóvenes interesados en las experiencias únicas. Creamos experiencias en donde siempre podrán encontrar combinaciones de música, arte, diseño y gastronomía las cuales los llevaran a sentir, envueltos en un ambiente único.
+            Para nosotros es de suma importancia que cada detalle en nuestros eventos alcance la perfección para así poder brindarle a la comunidad una experiencia inolvidable.
           </p>
-          <img alt="" src="assets/img/iniciativa_mati2.jpg"/>
+          </div>
+          <img width="500px" alt="" src="assets/img/iniciativa_mati2.jpg" onclick="blottoMati();" style="cursor:pointer;"/>
         </div>
       </section>
       <section id="contact">
       </section>
   </body>
   <script type=”application/ld+json”>
-   {
-     "@context": "http://schema.org",
-     "@type": "Organization",
-     "name" : "Grupo Blotto",
-     "url": "https://grupoblotto.com",
-     "sameAs" : [
-       "https://www.instagram.com/grupoblotto",
-     ]
-   }
-  </script>
+      {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "name" : "Grupo Blotto",
+          "url": "https://grupoblotto.com",
+          "sameAs" : [
+            "https://www.instagram.com/grupoblotto",
+        ]
+      }
+    </script>
   <script type=”application/ld+json”>
-   {
-     "@context": "http://schema.org",
-     "@type": "LocalBusiness",
-     "name" : "Grupo Blotto",
-     "url": "https://grupoblotto.com",
-     "logo": "https://grupoblotto.com/img/logo.jpg",
-     "image": "https://grupoblotto.com/img/logo.jpg",
-     "description": "Grupo Blotto busca ser una comunidad conformada por jóvenes interesados en las experiencias únicas. Creamos experiencias en donde siempre podrán encontrar combinaciones de música, arte, diseño y gastronomía las cuales los llevaran a sentir, envueltos en un ambiente único.",
-     "telephone": "",
-     "address": {
-       "@type": "PostalAddress",
-       "addressLocality": "Mexico city",
-       "addressRegion": "Ciudad de México",
-     },
-     "openingHours": [
-       "Mo-Fr 09:00-17:00"
-     ] }
-  </script>
+      {
+          "@context": "http://schema.org",
+          "@type": "LocalBusiness",
+          "name" : "Grupo Blotto",
+          "url": "https://grupoblotto.com",
+          "logo": "https://grupoblotto.com/img/logo.jpg",
+          "image": "https://grupoblotto.com/img/logo.jpg",
+          "description": "Grupo Blotto busca ser una comunidad conformada por jóvenes interesados en las experiencias únicas. Creamos experiencias en donde siempre podrán encontrar combinaciones de música, arte, diseño y gastronomía las cuales los llevaran a sentir, envueltos en un ambiente único.",
+          "telephone": "",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mexico city",
+            "addressRegion": "Ciudad de México",
+        },
+          "openingHours": [
+            "Mo-Fr 09:00-17:00"
+        ] }
+    </script>
   <script>
    (function () {
-     window.scrollToAbout = function () {
+     var text = {
+       contact: {
+         h: "Contacto",
+         p: "contacto@grupoblotto.com",
+       },
+       about: {
+         h: "¿Quiénes Somos?",
+         p: "Grupo Blotto es una comunidad conformada por jóvenes interesados en las experiencias únicas. Creamos experiencias en donde siempre podrán encontrar combinaciones de música, arte, diseño y gastronomía las cuales los llevaran a sentir, envueltos en un ambiente único. Para nosotros es de suma importancia que cada detalle en nuestros eventos alcance la perfección para así poder brindarle a la comunidad una experiencia inolvidable.",
+       },
+       mati: {
+         h: 'Iniciativa Mati',
+         p: '<span style="font-weight: bold;">Mati: (nahuatl) lo sabe, lo decide, lo manda, lo huele, lo siente.</span> </br>Es un espacio conformado para unir a jóvenes de diversas ideologías que logran conectarse a través de la música, el arte y el anhelo de vivir lo inexplicable. En el evento hay una combinación de diferentes conceptos de música en donde nuestros invitados tienen la oportunidad de degustar una variedad de platillos y coctelería de alto nivel al mismo tiempo que disfrutar diversas exposiciones de arte expresadas auténticamente. Las locaciones de la Iniciativa se basan en buscar una experiencia distinta a lo que la gente suele frecuentar. Iniciativa Mati tiene como finalidad estimular los 5 sentidos. </br>Ven, Vive y Siente con nosotros.',
+       },
+     }
+     window.blottoMati = function () {
+       document.querySelector('#sectionp').innerHTML = text.mati.p;
+       document.querySelector('#sectionh').innerText = text.mati.h;
+     }
+     window.blottoScrollTo = function (section) {
+       document.querySelector('#sectionp').innerHTML = text[section].p;
+       document.querySelector('#sectionh').innerText = text[section].h;
        document.querySelector('#desc').scrollIntoView({
          behavior: 'smooth'
        });
