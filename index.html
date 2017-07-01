@@ -1,179 +1,252 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-        <!-- Title, without branding. -->
-        <meta property="og:title" content="Blotto" />
-        <!-- Name, not URL (e.g. Apple, not apple.com) -->
-        <meta property="og:site_name" content="Blotto Grupo" />
-        <!-- URL. Should match canonical URL for SEO. Unique identifier for your article. -->
-        <meta property="og:url" content="grupoblotto.com" />
-        <!-- OPTIONAL description. 2-4 sentences. -->
-        <meta property="og:description" content="" />
-        <!-- Image for article. Facebook suggests at least 1200 x 630. -->
-        <meta property="og:image" content="" />
-        <meta property="og:image:width" content="1200" />
-    </head>
-    <body>
-        <div class="container">
-            <div class="video-container">
-                <section id="video">
-                    <div class="inner-video">
-                        <div class="volume-controls">
-                            <svg id="vol-off"
-                                 style="height: 67px;position: absolute;top: 130px;fill: rgba(169, 169, 169, 0.53);stroke: rgba(169, 169, 169, 0.53);width: 67px;right: 20px;"
-                                 xmlns:dc="http://purl.org/dc/elements/1.1/"
-                                 xmlns:cc="http://creativecommons.org/ns#"
-                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                                 xmlns:svg="http://www.w3.org/2000/svg"
-                                 xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                                 xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                                 xml:space="preserve"
-                                 version="1.0"
-                                 id="layer1"
-                                 width="400pt"
-                                 height="400pt"
-                                 viewBox="0 0 75 75"
-                                 inkscape:version="0.48.3.1 r9886"
-                                 sodipodi:docname="Mute_Icon.svg"
-                            >
-                                <defs id="defs3007"/>
-                                <g id="g1">
-                                    <polygon
-                                        id="polygon1"
-                                        points="39.389,13.769 22.235,28.606 6,28.606 6,47.699 21.989,47.699 39.389,62.75 39.389,13.769"
-                                        style="stroke-width:5;stroke-linejoin:round;"
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Grupo Blotto</title>
+    <meta name="description" content="Grupo Blotto">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- Title, without branding. -->
+    <meta property="og:title" content="Home Page" />
+    <!-- Name, not URL (e.g. Apple, not apple.com) -->
+    <meta property="og:site_name" content="Grupo Blotto" />
+    <!-- URL. Should match canonical URL for SEO. Unique identifier for your article. -->
+    <meta property="og:url" content="https://grupoblotto.com" />
+    <!-- OPTIONAL description. 2-4 sentences. -->
+    <meta property="og:description" content="Grupo Blotto busca ser una comunidad conformada por jóvenes interesados en las experiencias únicas. Creamos experiencias en donde siempre podrán encontrar combinaciones de música, arte, diseño y gastronomía las cuales los llevaran a sentir, envueltos en un ambiente único." />
+    <!-- Image for article. Facebook suggests at least 1200 x 630. -->
+    <meta property="og:image" content="https://grupoblotto.com/assets/img/logo.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <style>
+     html, body, div, span, applet, object, iframe,
+     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+     a, abbr, acronym, address, big, cite, code,
+     del, dfn, em, img, ins, kbd, q, s, samp,
+     small, strike, strong, sub, sup, tt, var,
+     b, u, i, center,
+     dl, dt, dd, ol, ul, li,
+     fieldset, form, label, legend,
+     table, caption, tbody, tfoot, thead, tr, th, td,
+     article, aside, canvas, details, embed,
+     figure, figcaption, footer, header, hgroup,
+     menu, nav, output, ruby, section, summary,
+     time, mark, audio, video {
+       margin: 0;
+       padding: 0;
+       border: 0;
+       font-size: 100%;
+       font: inherit;
+       vertical-align: baseline;
+     }
+     /* HTML5 display-role reset for older browsers */
+     article, aside, details, figcaption, figure,
+     footer, header, hgroup, menu, nav, section {
+       display: block;
+     }
+     body {
+       line-height: 1;
+     }
+     ol, ul {
+       list-style: none;
+     }
+     blockquote, q {
+       quotes: none;
+     }
+     blockquote:before, blockquote:after,
+     q:before, q:after {
+       content: '';
+       content: none;
+     }
+     table {
+       border-collapse: collapse;
+       border-spacing: 0;
+     }
+
+     .video-container {
+       position: relative;
+       width: 100%;
+       height: 100vh;
+       z-index: -10;
+       background: #0006;
+     }
+     .main-video-bg {
+       position: absolute;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       left: 0;
+       width: 100%;
+       z-index: -1;
+     }
+     . inner-video {
+       z-inedx: 999;
+     }
+    </style>
+  </head>
+  <body>
+    <section id="video">
+      <div class="video-container">
+        <div class="inner-video">
+          <div class="volume-controls">
+            <svg id="vol-off"
+              style="height: 67px;position: absolute;top: 130px;fill: rgba(169, 169, 169, 0.53);stroke: rgba(169, 169, 169, 0.53);width: 67px;right: 20px;"
+              xmlns:dc="http://purl.org/dc/elements/1.1/"
+              xmlns:cc="http://creativecommons.org/ns#"
+              xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              xmlns:svg="http://www.w3.org/2000/svg"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+              xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+              xml:space="preserve"
+              version="1.0"
+              id="layer1"
+              width="400pt"
+              height="400pt"
+              viewBox="0 0 75 75"
+              inkscape:version="0.48.3.1 r9886"
+              sodipodi:docname="Mute_Icon.svg"
+            >
+              <defs id="defs3007"/>
+              <g id="g1">
+              <polygon
+                                            id="polygon1"
+                                            points="39.389,13.769 22.235,28.606 6,28.606 6,47.699 21.989,47.699 39.389,62.75 39.389,13.769"
+                                            style="stroke-width:5;stroke-linejoin:round;"
                                     />
-                                    <path
-                                        id="path3003"
-                                        d="M 48.651772,50.269646 69.395223,25.971024"
-                                        style="fill:none;stroke-width:5;stroke-linecap:round"
-                                        inkscape:connector-curvature="0"
-                                        sodipodi:nodetypes="cc"
+              <path
+                                            id="path3003"
+                                            d="M 48.651772,50.269646 69.395223,25.971024"
+                                            style="fill:none;stroke-width:5;stroke-linecap:round"
+                                            inkscape:connector-curvature="0"
+                                            sodipodi:nodetypes="cc"
                                     />
-                                    <path
-                                        id="path3003-1"
-                                        d="M 69.395223,50.269646 48.651772,25.971024"
-                                        style="fill:none;stroke-width:5;stroke-linecap:round"
-                                        inkscape:connector-curvature="0"
-                                        sodipodi:nodetypes="cc"
+              <path
+                                            id="path3003-1"
+                                            d="M 69.395223,50.269646 48.651772,25.971024"
+                                            style="fill:none;stroke-width:5;stroke-linecap:round"
+                                            inkscape:connector-curvature="0"
+                                            sodipodi:nodetypes="cc"
                                     />
                                 </g>
-                            </svg>
-                            
-                            <svg
-                                id="vol-on"
-                                style="display:none;height: 67px;position: absolute;top: 130px;fill: rgba(169, 169, 169, 0.53);stroke: rgba(169, 169, 169, 0.53);width: 67px;right: 20px;"
-                                xmlns:dc="http://purl.org/dc/elements/1.1/"
-                                xmlns:cc="http://web.resource.org/cc/"
-                                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                                xmlns:svg="http://www.w3.org/2000/svg"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xml:space="preserve"
-                                version="1.0"
-                                id="layer1"
-                                width="400pt"
-                                height="400pt"
-                                viewBox="0 0 75 75"
-                            >
-                                <g id="g1">
-                                    <polygon
-                                        id="polygon1"
-                                        points="39.389,13.769 22.235,28.606 6,28.606 6,47.699 21.989,47.699 39.389,62.75 39.389,13.769"
-                                        style="stroke-width:5;stroke-linejoin:round;"
+            </svg>
+
+            <svg
+              id="vol-on"
+              style="display:none;height: 67px;position: absolute;top: 130px;fill: rgba(169, 169, 169, 0.53);stroke: rgba(169, 169, 169, 0.53);width: 67px;right: 20px;"
+              xmlns:dc="http://purl.org/dc/elements/1.1/"
+              xmlns:cc="http://web.resource.org/cc/"
+              xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              xmlns:svg="http://www.w3.org/2000/svg"
+              xmlns="http://www.w3.org/2000/svg"
+              xml:space="preserve"
+              version="1.0"
+              id="layer1"
+              width="400pt"
+              height="400pt"
+              viewBox="0 0 75 75"
+            >
+              <g id="g1">
+              <polygon
+                                              id="polygon1"
+                                              points="39.389,13.769 22.235,28.606 6,28.606 6,47.699 21.989,47.699 39.389,62.75 39.389,13.769"
+                                              style="stroke-width:5;stroke-linejoin:round;"
                                     />
-                                    <path
-                                        id="path1"
-                                        d="M 48.128,49.03 C 50.057,45.934 51.19,42.291 51.19,38.377 C 51.19,34.399 50.026,30.703 48.043,27.577"
-                                        style="fill:none;stroke-width:5;stroke-linecap:round"
+              <path
+                                              id="path1"
+                                              d="M 48.128,49.03 C 50.057,45.934 51.19,42.291 51.19,38.377 C 51.19,34.399 50.026,30.703 48.043,27.577"
+                                              style="fill:none;stroke-width:5;stroke-linecap:round"
                                     />
-                                    <path
-                                        id="path2"
-                                        d="M 55.082,20.537 C 58.777,25.523 60.966,31.694 60.966,38.377 C 60.966,44.998 58.815,51.115 55.178,56.076"
-                                        style="fill:none;stroke-width:5;stroke-linecap:round"
+              <path
+                                              id="path2"
+                                              d="M 55.082,20.537 C 58.777,25.523 60.966,31.694 60.966,38.377 C 60.966,44.998 58.815,51.115 55.178,56.076"
+                                              style="fill:none;stroke-width:5;stroke-linecap:round"
                                     />
-                                    <path
-                                        id="path1"
-                                        d="M 61.71,62.611 C 66.977,55.945 70.128,47.531 70.128,38.378 C 70.128,29.161 66.936,20.696 61.609,14.01"
-                                        style="fill:none;stroke-width:5;stroke-linecap:round"
+              <path
+                                              id="path1"
+                                              d="M 61.71,62.611 C 66.977,55.945 70.128,47.531 70.128,38.378 C 70.128,29.161 66.936,20.696 61.609,14.01"
+                                              style="fill:none;stroke-width:5;stroke-linecap:round"
                                     />
                             </g>
-                            </svg>
-                        </div>
-                    </div>
-                    <video
-                        poster="home_video_cover.jpg"
-                        class="main-lightbox-video main-video-bg"
-                        id="bgvid"
-                        playsinline autoplay muted loop>
-                        <source src="carmen_home.m4v" type="video/mp4">
-                    </video>
-            </div>
-                </section>
-                <section id="desc"></section>
-                <section id="contact"></section>
+            </svg>
+          </div>
+          <img alt="" height="300" width="300" src="assets/img/logo.jpg"/>
         </div>
-    </body>
-    <script type=”application/ld+json”>
-     {
-         "@context": "http://schema.org",
-         "@type": "Organization",
-         "name" : "Blotto",
-         "url": "",
-         "sameAs" : [
-             "https://www.facebook.com/blotto",
-             "https://www.instagram.com/blotto",
-         ]
-     }
-    </script>
-    <script type=”application/ld+json”>
-     {
-         "@context": "http://schema.org",
-         "@type": "LocalBusiness",
-         "name" : "Blotto",
-         "url": "",
-         "logo": "",
-         "image": "",
-         "description": "",
-         "telephone": "",
-         "address": {
-             "@type": "PostalAddress",
-             "addressLocality": "Mexico city",
-             "addressRegion": "Ciudad de México",
-         },
-         "openingHours": [
-             "Mo-Fr 09:00-17:00"
-         ] }
-    </script>
-    <script>
-     (function () {
-         const videoElem = document.getElementById('bgvid');
-         const volButtonOn = document.getElementById('vol-on');
-         const volButtonOff = document.getElementById('vol-off');
-         if(videoElem) {
-             if (volButtonOn) {
-                 volButtonOn.onclick = function (e) {
-                     videoElem.muted = true;
-                     volButtonOn.style.display = 'none';
-                     volButtonOff.style.display = 'block';
-                 }
-             }
-
-             if (volButtonOff) {
-                 volButtonOff.onclick = function (e) {
-                     videoElem.muted = false;
-                     volButtonOff.style.display = 'none';
-                     volButtonOn.style.display = 'block';
-                 }
-             }
+        <video
+          poster="home_video_cover.jpg"
+          class="main-lightbox-video main-video-bg"
+          id="bgvid"
+          playsinline autoplay muted loop>
+          <source src="assets/videos/blotto.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+      <section id="desc" style="background: white; padding:50px;">
+        <div class="container">
+          <h2>¿Quiénes Somos?</h2>
+          <p>
+            Grupo Blotto busca ser una comunidad conformada por jóvenes interesados en las experiencias únicas. Creamos experiencias en donde siempre podrán encontrar combinaciones de música, arte, diseño y gastronomía las cuales los llevaran a sentir, envueltos en un ambiente único.
+            Para nosotros es de suma importancia el que cada detalle en nuestros eventos alcancen la perfección para así poder brindarle a la comunidad una experiencia digna por haber puesto su confianza en nosotros.
+          </p>
+        </div>
+      </section>
+      <section id="contact">
+      </section>
+  </body>
+  <script type=”application/ld+json”>
+   {
+     "@context": "http://schema.org",
+     "@type": "Organization",
+     "name" : "Grupo Blotto",
+     "url": "https://grupoblotto.com",
+     "sameAs" : [
+       "https://www.instagram.com/grupoblotto",
+     ]
+   }
+  </script>
+  <script type=”application/ld+json”>
+   {
+     "@context": "http://schema.org",
+     "@type": "LocalBusiness",
+     "name" : "Grupo Blotto",
+     "url": "https://grupoblotto.com",
+     "logo": "https://grupoblotto.com/img/logo.jpg",
+     "image": "https://grupoblotto.com/img/logo.jpg",
+     "description": "Grupo Blotto busca ser una comunidad conformada por jóvenes interesados en las experiencias únicas. Creamos experiencias en donde siempre podrán encontrar combinaciones de música, arte, diseño y gastronomía las cuales los llevaran a sentir, envueltos en un ambiente único.",
+     "telephone": "",
+     "address": {
+       "@type": "PostalAddress",
+       "addressLocality": "Mexico city",
+       "addressRegion": "Ciudad de México",
+     },
+     "openingHours": [
+       "Mo-Fr 09:00-17:00"
+     ] }
+  </script>
+  <script>
+   (function () {
+     const videoElem = document.getElementById('bgvid');
+     const volButtonOn = document.getElementById('vol-on');
+     const volButtonOff = document.getElementById('vol-off');
+     if(videoElem) {
+console.log('debug')
+       if (volButtonOn) {
+         volButtonOn.onclick = function (e) {
+           videoElem.muted = true;
+           volButtonOn.style.display = 'none';
+           volButtonOff.style.display = 'block';
          }
-     })()
-    </script>
+       }
+
+       if (volButtonOff) {
+         volButtonOff.onclick = function (e) {
+           videoElem.muted = false;
+           volButtonOff.style.display = 'none';
+           volButtonOn.style.display = 'block';
+         }
+       }
+     }
+   })()
+  </script>
 </html>
