@@ -19,6 +19,7 @@
     <!-- Image for article. Facebook suggests at least 1200 x 630. -->
     <meta property="og:image" content="https://grupoblotto.com/assets/img/logo.jpg" />
     <meta property="og:image:width" content="1200" />
+    <link href="https://fonts.googleapis.com/css?family=Anton|Cormorant+Garamond:500" rel="stylesheet">
     <style>
      html, body, div, span, applet, object, iframe,
      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -68,11 +69,10 @@
        position: relative;
        width: 100%;
        height: 100vh;
-       z-index: -10;
        background: #0006;
      }
      .main-video-bg {
-       position: absolute;
+       position: fixed;
        top: 0;
        right: 0;
        bottom: 0;
@@ -82,6 +82,100 @@
      }
      . inner-video {
        z-inedx: 999;
+     }
+
+     /*! Typebase.less v0.1.0 | MIT License */
+     /* Setup */
+     html {
+       /* Change default typefaces here */
+       font-family: 'Cormorant Garamond', serif;
+       font-size: 137.5%;
+       -webkit-font-smoothing: antialiased;
+     }
+     /* Copy & Lists */
+     p {
+       line-height: 1.5rem;
+       margin-top: 1.5rem;
+       margin-bottom: 0;
+     }
+     ul,
+     ol {
+       margin-top: 1.5rem;
+       margin-bottom: 1.5rem;
+     }
+     ul li,
+     ol li {
+       line-height: 1.5rem;
+     }
+     ul ul,
+     ol ul,
+     ul ol,
+     ol ol {
+       margin-top: 0;
+       margin-bottom: 0;
+     }
+     blockquote {
+       line-height: 1.5rem;
+       margin-top: 1.5rem;
+       margin-bottom: 1.5rem;
+     }
+     /* Headings */
+     h1,
+     h2,
+     h3,
+     h4,
+     h5,
+     h6 {
+       /* Change heading typefaces here */
+       font-family: 'Anton', sans-serif;
+       margin-top: 1.5rem;
+       margin-bottom: 0;
+       line-height: 1.5rem;
+     }
+     h1 {
+       font-size: 4.242rem;
+       line-height: 4.5rem;
+       margin-top: 3rem;
+     }
+     h2 {
+       font-size: 2.828rem;
+       line-height: 3rem;
+       margin-top: 3rem;
+     }
+     h3 {
+       font-size: 1.414rem;
+     }
+     h4 {
+       font-size: 0.707rem;
+     }
+     h5 {
+       font-size: 0.4713333333333333rem;
+     }
+     h6 {
+       font-size: 0.3535rem;
+     }
+     /* Tables */
+     table {
+       margin-top: 1.5rem;
+       border-spacing: 0px;
+       border-collapse: collapse;
+     }
+     table td,
+     table th {
+       padding: 0;
+       line-height: 33px;
+     }
+     /* Code blocks */
+     code {
+       vertical-align: bottom;
+     }
+     /* Leading paragraph text */
+     .lead {
+       font-size: 1.414rem;
+     }
+     /* Hug the block above you */
+     .hug {
+       margin-top: 0;
      }
     </style>
   </head>
@@ -172,6 +266,21 @@
             </svg>
           </div>
           <img alt="" height="300" width="300" src="assets/img/logo.jpg"/>
+          <div style="position: absolute;
+                      background: white;
+                      bottom: 0;
+                      right: 0;
+                      padding: 30px;">
+            <h4 style="margin-top: 0;">Contacto</h4>
+          </div>
+          <div style="position: absolute;
+                      background: white;
+                      bottom: 0;
+                      right: 170px;
+                      cursor: pointer;
+                      padding: 50px;" onclick="scrollToAbout();">
+            <h4 style="margin-top: 0;">¿Quiénes Somos?</h4>
+          </div>
         </div>
         <video
           poster="home_video_cover.jpg"
@@ -182,10 +291,10 @@
         </video>
       </div>
     </section>
-      <section id="desc" style="background: white; padding:50px;">
+      <section id="desc" style="background: white; padding:80px;">
         <div class="container">
           <h2>¿Quiénes Somos?</h2>
-          <p>
+          <p style="max-width: 600px;text-align:justify;">
             Grupo Blotto busca ser una comunidad conformada por jóvenes interesados en las experiencias únicas. Creamos experiencias en donde siempre podrán encontrar combinaciones de música, arte, diseño y gastronomía las cuales los llevaran a sentir, envueltos en un ambiente único.
             Para nosotros es de suma importancia el que cada detalle en nuestros eventos alcancen la perfección para así poder brindarle a la comunidad una experiencia digna por haber puesto su confianza en nosotros.
           </p>
@@ -226,11 +335,16 @@
   </script>
   <script>
    (function () {
+     window.scrollToAbout = function () {
+       document.querySelector('#desc').scrollIntoView({
+         behavior: 'smooth'
+       });
+     }
      const videoElem = document.getElementById('bgvid');
      const volButtonOn = document.getElementById('vol-on');
      const volButtonOff = document.getElementById('vol-off');
      if(videoElem) {
-console.log('debug')
+       console.log('debug')
        if (volButtonOn) {
          volButtonOn.onclick = function (e) {
            videoElem.muted = true;
