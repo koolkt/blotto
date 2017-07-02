@@ -8,6 +8,9 @@ body {
   height: 100%;
   width: 100%;
 }
+section {
+  transform: translatez(0);
+}
 body {
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
@@ -98,7 +101,7 @@ aside {
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: #151617 !important;
+  color: orange!important;
   background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -128,6 +131,9 @@ aside {
   .navbar-default.affix {
     background-color: white;
     border-color: rgba(34, 34, 34, 0.05);
+  }
+  .navbar-default.affix svg {
+    fill: black!important;
   }
   .navbar-default.affix .navbar-header .navbar-brand {
     color: #151617;
